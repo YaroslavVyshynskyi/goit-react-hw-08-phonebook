@@ -1,0 +1,21 @@
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.contacts__item:not(:last-child) {
+    margin-top: 5px;
+}
+

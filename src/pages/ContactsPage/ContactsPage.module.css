@@ -1,0 +1,6 @@
+.contactsPage__container {
+    padding-top: 55px;
+    min-height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}

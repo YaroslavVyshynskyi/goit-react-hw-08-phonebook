@@ -1,0 +1,84 @@
+.loginPage__container {
+    /* background-image: url('//image.shutterstock.com/shutterstock/photos/655906144/display_1500/stock-photo-background-conceptual-image-with-social-connection-lines-on-dark-backdrop-655906144.jpg');
+    background-size: cover; */
+    /* top: 50px; */
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    padding: 50px;
+    height: auto;
+    width: auto;
+}
+
+.login__title {
+    color: rgb(255, 255, 255);;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.loginForm__label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form__text {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5px;
+}
+
+.login__input {
+    width: 250px;
+    background: rgba(53, 56, 58, 1);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 1px solid black;
+}
+.login__input:hover {
+    border-color: rgb(109, 111, 224);
+
+}
+
+.login__input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px rgba(53, 56, 58, 1);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+
+.login__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px;
+    width: 250px;
+    height: 50px;
+    background: rgb(15, 13, 151);
+    color: #fff;
+    border: 1px solid black;
+}
+
+.login__btn:hover {
+    background: rgb(53, 50, 247);
+    border: 1px solid black;
+}

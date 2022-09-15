@@ -1,0 +1,76 @@
+.regPage__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.regPage__title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    padding: 50px;
+    height: auto;
+    width: auto;
+}
+
+.regForm__lable:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.regForm__text {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 5px;
+}
+
+.regForm__input {
+    width: 250px;
+    background: rgba(53, 56, 58, 1);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.regForm__input:hover, :focus {
+    border-color: rgb(109, 111, 224);
+}
+
+.regForm__input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px rgba(53, 56, 58, 1);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.regForm__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px;
+    height: 50px;
+    width: 250px;
+    background: rgb(15, 13, 151);
+    color: #fff;
+    border: 1px solid black;
+}
+
+.regForm__btn:hover {
+    background: rgb(53, 50, 247);
+    border: 1px solid black;
+}

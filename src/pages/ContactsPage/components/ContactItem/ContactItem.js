@@ -1,15 +1,23 @@
-import { useDeleteContactMutation } from 'slice/contactsSlice';
-import css from '../ContactList/ContactList.module.css';
 import MoonLoader from 'react-spinners/MoonLoader';
 import PropTypes from 'prop-types';
+import { ContactIcon } from '../index';
+import { useDeleteContactMutation } from 'slice/contactsSlice';
+
+import css from './ContactItem.module.css';
 
 const ContactItem = ({ contact }) => {
-  const { name, number, id } = contact;
+  const { name, number, id, color } = contact;
   const [deleteContact, { isLoading }] = useDeleteContactMutation();
+
   return (
-    <>
-      <span className={css.item__name}>{name}:</span>
-      <span className={css.item__number}>{number}</span>
+    <div className={css.contactItem__wrap}>
+      <span className={css.item__icon}>
+        <ContactIcon name={name} isRandomColor={!color} selectedColor={color} />
+      </span>
+      <div className={css.contact__info}>
+        <span className={css.item__name}>{name}:</span>
+        <span className={css.item__number}>{number}</span>
+      </div>
       <button
         type="button"
         className={css.delete_btn}
@@ -18,7 +26,7 @@ const ContactItem = ({ contact }) => {
         Delete
         {isLoading && <MoonLoader size={8} />}
       </button>
-    </>
+    </div>
   );
 };
 
@@ -27,6 +35,7 @@ ContactItem.propTypes = {
     name: PropTypes.string.isRequired,
     number: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
+    color: PropTypes.string,
   }).isRequired,
 };
 

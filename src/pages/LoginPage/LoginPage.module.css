@@ -50,9 +50,9 @@
     padding: 5px;
     border: 1px solid black;
 }
+
 .login__input:hover {
     border-color: rgb(109, 111, 224);
-
 }
 
 .login__input:-webkit-autofill {

@@ -1,9 +1,10 @@
 .contactItem__wrap {
-    background-color: rgba(53, 56, 58, 0.95);;
-    border: 2px solid grey;
+    /* background-color: rgba(53, 56, 58, 0.9); */
+    background-color: rgba(3, 2, 58, 0.8);
+    border: 2px solid rgba(109, 111, 224);
     border-radius: 5px;
     width: 100%;
-    padding: 5px 15px;
+    padding: 8px 15px;
     display: flex;
     align-items: center;
 }

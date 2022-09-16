@@ -1,6 +1,28 @@
 .contactsPage__container {
-    padding-top: 55px;
+    padding-top: 50px;
     min-height: 100vh;
     width: 100%;
     backdrop-filter: blur(5px);
+}
+
+.contactsPage__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+}
+
+.contactsPage__title {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contactsPage__body {
+    display: flex;
+    padding: 30px 50px;
+    width: 100%;
+    height: auto;
 }

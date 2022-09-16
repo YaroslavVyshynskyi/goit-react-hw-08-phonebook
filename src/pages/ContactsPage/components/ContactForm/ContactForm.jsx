@@ -50,7 +50,7 @@ const ContactForm = () => {
 
     return (
         <div className={css.contactsForm__container}>
-            <h1 className={css.addContact__title}>PHONEBOOK</h1>
+            <h1 className={css.addContact__title}>Create new contact</h1>
             <form onSubmit={handleSubmit} className={css.contactsForm}>
                 <label className={css.contactsForm__label}>
                     <span className={css.contactsForm__text}>Name</span>

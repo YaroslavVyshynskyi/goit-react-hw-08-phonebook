@@ -1,5 +1,6 @@
 import MoonLoader from 'react-spinners/MoonLoader';
 import PropTypes from 'prop-types';
+import { FcEmptyTrash } from 'react-icons/fc';
 import { ContactIcon } from '../index';
 import { useDeleteContactMutation } from 'slice/contactsSlice';
 
@@ -20,10 +21,10 @@ const ContactItem = ({ contact }) => {
       </div>
       <button
         type="button"
-        className={css.delete_btn}
         onClick={() => deleteContact(id)}
+        className={css.contactDelete__btn}
       >
-        Delete
+        <FcEmptyTrash className={css.contactDeleteBtn__icon} />
         {isLoading && <MoonLoader size={8} />}
       </button>
     </div>

@@ -5,9 +5,14 @@ import css from './ContactsPage.module.css';
 const ContactsPage = () => {
   return (
     <div className={css.contactsPage__container}>
-      <ContactForm />
-      <Filter />
-      <ContactList />
+      <div className={css.contactsPage__head}>
+        <h1 className={css.contactsPage__title}>PHONEBOOK</h1>
+        <Filter />
+      </div>
+      <div className={css.contactsPage__body}>
+        <ContactForm />
+        <ContactList />
+      </div>
     </div>
   );
 };

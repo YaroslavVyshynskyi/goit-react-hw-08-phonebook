@@ -16,11 +16,12 @@ const Filter = () => {
     return (
         <div className={css.filter__container}>
             <label className={css.filter__label}>
-                <p className={css.filter__title}>Find contacts by name</p>
+                <p className={css.filter__title}>Find contact by name</p>
                 <input
                     type="text" value={filter}
                     onChange={onChange}
-                    className={css.filter__input} />
+                    className={css.filter__input} 
+                    placeholder="Johnny English"/>
             </label>
         </div>    
     )    

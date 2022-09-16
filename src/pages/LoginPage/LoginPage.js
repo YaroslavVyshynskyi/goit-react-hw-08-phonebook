@@ -49,6 +49,7 @@ const LoginPage = () => {
             value={email}
             onChange={handleEmailChange}
             className={css.login__input}
+            required
           />
         </label>
 
@@ -61,6 +62,7 @@ const LoginPage = () => {
             value={password}
             onChange={handlePasswordChange}
             className={css.login__input}
+            required
           />
         </label>
 

@@ -21,7 +21,7 @@
     background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     padding: 30px;
     border-top: 4px solid rgba(53, 56, 58, 1);
     border-bottom: 4px solid rgba(53, 56, 58, 1);
@@ -30,10 +30,6 @@
 
 .homePage__item:not(:last-child) {
     margin-bottom: 20px;
-}
-
-.homePageItem__image {
-
 }
 
 .homePage__img {
@@ -45,8 +41,8 @@
 .homePageItem__info{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .homePage__title{

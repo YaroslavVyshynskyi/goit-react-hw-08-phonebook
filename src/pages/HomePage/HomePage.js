@@ -1,4 +1,5 @@
 import css from './HomePage.module.css';
+import { addContact, deleteContact, filterContacts } from 'images';
 
 const HomePage = () => {
   return (
@@ -6,9 +7,10 @@ const HomePage = () => {
       <ul className={css.omePage__list}>
         <li className={css.homePage__item}>
           <div className={css.homePageItem__image}>
-            <image
-              src="../../../public/new-user-icon-png-2.png"
+            <img
+              src={addContact}
               alt="create contact"
+              className={css.homePage__img}
             />
           </div>
           <div className={css.homePageItem__info}>
@@ -26,19 +28,19 @@ const HomePage = () => {
             </p>
           </div>
           <div className={css.homePageItem__image}>
-            <image
-              src="../../../public/new-user-icon-png-2.png"
-              alt="create contact"
-              width="150px"
-              height="150px"
+            <img
+              src={deleteContact}
+              alt="filter contact"
+              className={css.homePage__img}
             />
           </div>
         </li>
         <li className={css.homePage__item}>
           <div className={css.homePageItem__image}>
-            <image
-              src="../../../public/new-user-icon-png-2.png"
-              alt="create contact"
+            <img
+              src={filterContacts}
+              alt="delete contact"
+              className={css.homePage__img}
             />
           </div>
           <div className={css.homePageItem__info}>

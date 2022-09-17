@@ -16,7 +16,7 @@ const ContactItem = ({ contact }) => {
         <ContactIcon name={name} isRandomColor={!color} selectedColor={color} />
       </span>
       <div className={css.contact__info}>
-        <span className={css.item__name}>{name}:</span>
+        <span className={css.item__name}>{name}</span>
         <span className={css.item__number}>{number}</span>
       </div>
       <button

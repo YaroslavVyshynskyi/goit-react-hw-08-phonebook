@@ -19,7 +19,7 @@
 
 .user__icon {
     display: block;
-    background-image: url("../../../../../public/ava_enot.jpg");
+    background-image: url("../../../../images/ava_enot.jpg");
     background-size: cover;
     width: 45px;
     height: 45px;
@@ -46,12 +46,7 @@
     width: auto;
     background-color: inherit;
     color:rgb(178, 177, 236);
-    /* border: 1px solid rgba(255, 255, 255, 0.25); */
-    /* box-shadow: rgb(255, 255, 255) 0px 0px 5px 0px; */
-    /* font-weight: 400;
-        line-height: normal;
-        color: rgb(178, 177, 236);
-        text-decoration: none; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logOut__btn:hover {

@@ -34,7 +34,7 @@ const App = () => {
       {isLoading ? (<DotLoader />) : (
 
         <>
-          <BrowserRouter>
+          <BrowserRouter basename="/YaroslavVyshynskyi/goit-react-hw-08-phonebook/">
             <Suspense fallback={<p>Loading...</p>}>
               <AppBar />
               <Routes>

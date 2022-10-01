@@ -32,8 +32,6 @@ const LoginPage = () => {
         })
       );
     }
-    setMail('');
-    setPassword('');
   };
 
   return (
